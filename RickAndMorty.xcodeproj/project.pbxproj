@@ -15,6 +15,7 @@
 		9F0FCD482411E35400AFC61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0FCD462411E35400AFC61E /* LaunchScreen.storyboard */; };
 		9F0FCD532411E35400AFC61E /* RickAndMortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FCD522411E35400AFC61E /* RickAndMortyTests.swift */; };
 		9F0FCD5E2411E35400AFC61E /* RickAndMortyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FCD5D2411E35400AFC61E /* RickAndMortyUITests.swift */; };
+		9F0FCD722411E9ED00AFC61E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FCD712411E9ED00AFC61E /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9F0FCD592411E35400AFC61E /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0FCD5D2411E35400AFC61E /* RickAndMortyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyUITests.swift; sourceTree = "<group>"; };
 		9F0FCD5F2411E35400AFC61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0FCD712411E9ED00AFC61E /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		9F0FCD3A2411E35100AFC61E /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
-				9F0FCD3B2411E35100AFC61E /* AppDelegate.swift */,
-				9F0FCD3D2411E35100AFC61E /* SceneDelegate.swift */,
-				9F0FCD3F2411E35100AFC61E /* ViewController.swift */,
-				9F0FCD412411E35100AFC61E /* Main.storyboard */,
+				9F0FCD6C2411E3CC00AFC61E /* View */,
+				9F0FCD6D2411E3DD00AFC61E /* Interactor */,
+				9F0FCD6E2411E3EA00AFC61E /* Presenter */,
+				9F0FCD6F2411E3F500AFC61E /* Entity */,
+				9F0FCD702411E3FC00AFC61E /* Router */,
+				9F0FCD6B2411E36500AFC61E /* Project Files */,
 				9F0FCD442411E35400AFC61E /* Assets.xcassets */,
-				9F0FCD462411E35400AFC61E /* LaunchScreen.storyboard */,
-				9F0FCD492411E35400AFC61E /* Info.plist */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -126,6 +128,55 @@
 				9F0FCD5F2411E35400AFC61E /* Info.plist */,
 			);
 			path = RickAndMortyUITests;
+			sourceTree = "<group>";
+		};
+		9F0FCD6B2411E36500AFC61E /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0FCD3B2411E35100AFC61E /* AppDelegate.swift */,
+				9F0FCD3D2411E35100AFC61E /* SceneDelegate.swift */,
+				9F0FCD492411E35400AFC61E /* Info.plist */,
+			);
+			path = "Project Files";
+			sourceTree = "<group>";
+		};
+		9F0FCD6C2411E3CC00AFC61E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F0FCD462411E35400AFC61E /* LaunchScreen.storyboard */,
+				9F0FCD412411E35100AFC61E /* Main.storyboard */,
+				9F0FCD3F2411E35100AFC61E /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F0FCD6D2411E3DD00AFC61E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9F0FCD6E2411E3EA00AFC61E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9F0FCD6F2411E3F500AFC61E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9F0FCD712411E9ED00AFC61E /* Character.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9F0FCD702411E3FC00AFC61E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +313,7 @@
 				9F0FCD402411E35100AFC61E /* ViewController.swift in Sources */,
 				9F0FCD3C2411E35100AFC61E /* AppDelegate.swift in Sources */,
 				9F0FCD3E2411E35100AFC61E /* SceneDelegate.swift in Sources */,
+				9F0FCD722411E9ED00AFC61E /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = RickAndMorty/Info.plist;
+				INFOPLIST_FILE = "RickAndMorty/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = RickAndMorty/Info.plist;
+				INFOPLIST_FILE = "RickAndMorty/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
