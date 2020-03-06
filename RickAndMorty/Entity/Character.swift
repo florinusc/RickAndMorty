@@ -8,4 +8,14 @@
 
 import Foundation
 
-
+struct Character {
+    let id: Int
+    let name: String
+    let species: String
+    let gender: String
+    let location: Location
+    let origin: Location
+    let image: String
+    let url: String
+    let episodes: [String]
+}
