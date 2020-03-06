@@ -20,6 +20,8 @@
 		9F0FCD772412A8F100AFC61E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FCD762412A8F100AFC61E /* SessionManager.swift */; };
 		9F0FCD792412A95D00AFC61E /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0FCD782412A95D00AFC61E /* RequestType.swift */; };
 		9F6B28412412AE5600E5BEF1 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B28402412AE5600E5BEF1 /* CustomError.swift */; };
+		9F6B28432412B39D00E5BEF1 /* CharactersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B28422412B39D00E5BEF1 /* CharactersInteractor.swift */; };
+		9F6B28452412C33A00E5BEF1 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B28442412C33A00E5BEF1 /* Characters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		9F0FCD762412A8F100AFC61E /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9F0FCD782412A95D00AFC61E /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		9F6B28402412AE5600E5BEF1 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		9F6B28422412B39D00E5BEF1 /* CharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersInteractor.swift; sourceTree = "<group>"; };
+		9F6B28442412C33A00E5BEF1 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,7 @@
 		9F0FCD6D2411E3DD00AFC61E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9F6B28422412B39D00E5BEF1 /* CharactersInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			children = (
 				9F0FCD712411E9ED00AFC61E /* Character.swift */,
 				9F0FCD732411EA7E00AFC61E /* Location.swift */,
+				9F6B28442412C33A00E5BEF1 /* Characters.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -342,10 +348,12 @@
 				9F6B28412412AE5600E5BEF1 /* CustomError.swift in Sources */,
 				9F0FCD3C2411E35100AFC61E /* AppDelegate.swift in Sources */,
 				9F0FCD792412A95D00AFC61E /* RequestType.swift in Sources */,
+				9F6B28432412B39D00E5BEF1 /* CharactersInteractor.swift in Sources */,
 				9F0FCD772412A8F100AFC61E /* SessionManager.swift in Sources */,
 				9F0FCD742411EA7E00AFC61E /* Location.swift in Sources */,
 				9F0FCD3E2411E35100AFC61E /* SceneDelegate.swift in Sources */,
 				9F0FCD722411E9ED00AFC61E /* Character.swift in Sources */,
+				9F6B28452412C33A00E5BEF1 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

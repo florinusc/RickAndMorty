@@ -25,7 +25,7 @@ class SessionManager {
                 return
             }
             handler(.success(data))
-        }
+        }.resume()
     }
 
 }
