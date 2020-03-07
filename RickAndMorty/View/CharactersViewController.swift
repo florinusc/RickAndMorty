@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+class CharactersViewController: UIViewController, View {
+    
+    var presenter: CharactersPresenter!
+    
+    static var storyboardName: String {
+        return "Main"
     }
-
-
 }
-
