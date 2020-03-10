@@ -17,7 +17,9 @@ class Router {
     }
     
     func start() {
-        
+        let charactersViewController = CharactersViewController.getInstance(presenter: CharactersPresenter())
+        window.rootViewController = charactersViewController
+        window.makeKeyAndVisible()
     }
     
 }

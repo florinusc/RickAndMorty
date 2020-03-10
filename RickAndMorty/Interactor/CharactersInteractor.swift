@@ -16,7 +16,7 @@ protocol CharactersInteractorOutput: class {
     func charactersFetched(result: Result<[Character], Error>)
 }
 
-class CharactersInteractor: CharactersInteractorInput {
+class CharactersInteractor {
     
     private let sessionManager = SessionManager()
     
@@ -25,6 +25,10 @@ class CharactersInteractor: CharactersInteractorInput {
     init(output: CharactersInteractorOutput) {
         self.output = output
     }
+    
+}
+
+extension CharactersInteractor: CharactersInteractorInput {
     
     func fetchCharacters() {
         sessionManager.request(type: .characters) { [weak self] (result) in
