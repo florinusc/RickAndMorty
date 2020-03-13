@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Router {
+class CharactersRouter: Router {
     
     private let window: UIWindow
     
@@ -17,7 +17,10 @@ class Router {
     }
     
     func start() {
-        let charactersViewController = CharactersViewController.getInstance(presenter: CharactersPresenter())
+        let charactersInteractor = CharactersInteractor()
+        let charactersPresenter = CharactersPresenter(router: self, interactor: charactersInteractor)
+        charactersInteractor.output = charactersPresenter
+        let charactersViewController = CharactersViewController.getInstance(presenter: charactersPresenter)
         window.rootViewController = charactersViewController
         window.makeKeyAndVisible()
     }

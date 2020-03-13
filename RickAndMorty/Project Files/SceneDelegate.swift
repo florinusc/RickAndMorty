@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         guard let window = window else { return }
         window.windowScene = windowScene
-        let router = Router(window: window)
+        let router = CharactersRouter(window: window)
         router.start()
     }
 
