@@ -21,6 +21,7 @@ class CharactersRouter: Router {
         let charactersPresenter = CharactersPresenter(router: self, interactor: charactersInteractor)
         charactersInteractor.output = charactersPresenter
         let charactersViewController = CharactersViewController.getInstance(presenter: charactersPresenter)
+        charactersPresenter.view = charactersViewController
         window.rootViewController = charactersViewController
         window.makeKeyAndVisible()
     }

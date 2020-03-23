@@ -8,11 +8,14 @@
 
 import Foundation
 
-protocol Presenter {
+protocol Presenter: class {
     associatedtype RouterType: Router
     associatedtype InteractorType: Interactor
+    associatedtype ViewType: View
     var router: RouterType { get }
     var interactor: InteractorType { get }
+    var view: ViewType? { get set }
     init(router: RouterType, interactor: InteractorType)
+    func viewDidLoad()
 }
 

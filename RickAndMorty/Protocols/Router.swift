@@ -8,4 +8,6 @@
 
 import Foundation
 
-protocol Router {}
+protocol Router {
+    func start()
+}

@@ -9,14 +9,18 @@
 import UIKit
 
 class CharactersPresenter: Presenter {
-    
+   
     let router: CharactersRouter
     let interactor: CharactersInteractor
+    
+    weak var view: CharactersViewController?
     
     required init(router: CharactersRouter, interactor: CharactersInteractor) {
         self.router = router
         self.interactor = interactor
     }
+    
+    func viewDidLoad() {}
 }
 
 extension CharactersPresenter: CharactersInteractorOutput {
