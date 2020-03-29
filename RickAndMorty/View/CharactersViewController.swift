@@ -10,9 +10,20 @@ import UIKit
 
 class CharactersViewController: UIViewController, View {
     
+    @IBOutlet private weak var collectionView: UICollectionView!
+    
     var presenter: CharactersPresenter!
     
     static var storyboardName: String {
         return "Main"
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
+        collectionView.register(CharacterCell.self)
     }
 }
