@@ -19,6 +19,14 @@ class CharacterCell: UICollectionViewCell {
     
     private func setup(with presenter: CharacterCellPresenter) {
         nameLabel.text = presenter.name
+        if let url = URL(string: presenter.imageUrl) {
+            imageView.load(url: url)
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageView.image = nil
     }
     
 }

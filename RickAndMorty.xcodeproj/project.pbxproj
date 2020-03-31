@@ -33,6 +33,7 @@
 		9F6B285B242EBA7500E5BEF1 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */; };
 		9FB887BA2432AF3C00218399 /* CharacterCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB887B92432AF3C00218399 /* CharacterCellPresenter.swift */; };
 		9FB887BC2432B2AD00218399 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */; };
+		9FB887BE243403E000218399 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB887BD243403E000218399 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		9FB887B92432AF3C00218399 /* CharacterCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellPresenter.swift; sourceTree = "<group>"; };
 		9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9FB887BD243403E000218399 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 			children = (
 				9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */,
 				9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */,
+				9FB887BD243403E000218399 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				9FB887BA2432AF3C00218399 /* CharacterCellPresenter.swift in Sources */,
 				9F6B2853241810CD00E5BEF1 /* Interactor.swift in Sources */,
 				9FB887BC2432B2AD00218399 /* UIViewController+Extension.swift in Sources */,
+				9FB887BE243403E000218399 /* UIImageView+Extension.swift in Sources */,
 				9F6B285B242EBA7500E5BEF1 /* UICollectionView+Extension.swift in Sources */,
 				9F6B28432412B39D00E5BEF1 /* CharactersInteractor.swift in Sources */,
 				9F6B285124180C2D00E5BEF1 /* Router.swift in Sources */,
