@@ -18,12 +18,49 @@ class CharactersViewController: UIViewController, View {
         return "Main"
     }
     
+    private lazy var dataSource = makeDatasource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
         setup()
     }
     
+    func update(with result: Result<[CharacterCellPresenter], Error>) {
+        switch result {
+        case .success(let cellPresenters):
+            guard cellPresenters.count > 0 else { return }
+            var snapshot = dataSource.snapshot()
+            if snapshot.numberOfSections == 0 {
+                snapshot.appendSections([0])
+            }
+            snapshot.appendItems(cellPresenters, toSection: 0)
+            dataSource.apply(snapshot, animatingDifferences: true)
+        case .failure(let error):
+            presentAlert(for: error)
+        }
+    }
+    
     private func setup() {
+        collectionView.delegate = self
+        collectionView.dataSource = dataSource
         collectionView.register(CharacterCell.self)
+    }
+    
+    private func makeDatasource() -> UICollectionViewDiffableDataSource<Int, CharacterCellPresenter> {
+        return UICollectionViewDiffableDataSource(collectionView: collectionView) { (collectionView, indexPath, cellPresenter) -> UICollectionViewCell? in
+            let cell: CharacterCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.presenter = cellPresenter
+            return cell
+        }
+    }
+}
+
+extension CharactersViewController: UICollectionViewDelegate {}
+
+extension CharactersViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let side = UIScreen.main.bounds.width - 20.0
+        return CGSize(width: side, height: side)
     }
 }

@@ -31,6 +31,8 @@
 		9F6B2857242EB9E200E5BEF1 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B2855242EB9E200E5BEF1 /* CharacterCell.swift */; };
 		9F6B2858242EB9E200E5BEF1 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6B2856242EB9E200E5BEF1 /* CharacterCell.xib */; };
 		9F6B285B242EBA7500E5BEF1 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */; };
+		9FB887BA2432AF3C00218399 /* CharacterCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB887B92432AF3C00218399 /* CharacterCellPresenter.swift */; };
+		9FB887BC2432B2AD00218399 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		9F6B2855242EB9E200E5BEF1 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		9F6B2856242EB9E200E5BEF1 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 		9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		9FB887B92432AF3C00218399 /* CharacterCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellPresenter.swift; sourceTree = "<group>"; };
+		9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6B284C2412CB6800E5BEF1 /* CharactersPresenter.swift */,
+				9FB887B92432AF3C00218399 /* CharacterCellPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				9F6B285A242EBA7500E5BEF1 /* UICollectionView+Extension.swift */,
+				9FB887BB2432B2AD00218399 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,7 +400,9 @@
 				9F6B28412412AE5600E5BEF1 /* CustomError.swift in Sources */,
 				9F0FCD3C2411E35100AFC61E /* AppDelegate.swift in Sources */,
 				9F0FCD792412A95D00AFC61E /* RequestType.swift in Sources */,
+				9FB887BA2432AF3C00218399 /* CharacterCellPresenter.swift in Sources */,
 				9F6B2853241810CD00E5BEF1 /* Interactor.swift in Sources */,
+				9FB887BC2432B2AD00218399 /* UIViewController+Extension.swift in Sources */,
 				9F6B285B242EBA7500E5BEF1 /* UICollectionView+Extension.swift in Sources */,
 				9F6B28432412B39D00E5BEF1 /* CharactersInteractor.swift in Sources */,
 				9F6B285124180C2D00E5BEF1 /* Router.swift in Sources */,

@@ -8,4 +8,17 @@
 
 import UIKit
 
-class CharacterCell: UICollectionViewCell {}
+class CharacterCell: UICollectionViewCell {
+    
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    
+    var presenter: CharacterCellPresenter! {
+        didSet { setup(with: presenter) }
+    }
+    
+    private func setup(with presenter: CharacterCellPresenter) {
+        nameLabel.text = presenter.name
+    }
+    
+}

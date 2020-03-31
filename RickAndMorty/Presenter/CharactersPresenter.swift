@@ -20,11 +20,18 @@ class CharactersPresenter: Presenter {
         self.interactor = interactor
     }
     
-    func viewDidLoad() {}
+    func viewDidLoad() {
+        interactor.fetchCharacters()
+    }
 }
 
 extension CharactersPresenter: CharactersInteractorOutput {
     func charactersFetched(result: Result<[Character], Error>) {
-        
+        let newResult = result.map { (characters) -> [CharacterCellPresenter] in
+            return characters.map { CharacterCellPresenter(character: $0) }
+        }
+        DispatchQueue.main.async {
+            self.view?.update(with: newResult)
+        }
     }
 }

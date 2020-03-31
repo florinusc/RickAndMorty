@@ -17,5 +17,7 @@ struct Character: Decodable {
     let origin: Location
     let image: String
     let url: String
-    let episodes: [String]
+    let episodes: [String]?
 }
+
+extension Character: Hashable {}

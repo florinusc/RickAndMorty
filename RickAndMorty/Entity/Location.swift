@@ -12,3 +12,5 @@ struct Location: Decodable {
     let name: String
     let url: String
 }
+
+extension Location: Hashable {}
