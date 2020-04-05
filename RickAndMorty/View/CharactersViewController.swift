@@ -45,6 +45,7 @@ class CharactersViewController: UIViewController, View {
         collectionView.delegate = self
         collectionView.dataSource = dataSource
         collectionView.register(CharacterCell.self)
+        collectionView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
     }
     
     private func makeDatasource() -> UICollectionViewDiffableDataSource<Int, CharacterCellPresenter> {

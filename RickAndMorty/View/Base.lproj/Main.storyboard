@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XhR-pg-4bC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hf2-4q-Rlc">
                                     <size key="itemSize" width="50" height="50"/>
@@ -27,10 +27,10 @@
                                 <cells/>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XhR-pg-4bC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9vo-Z8-sp7"/>
-                            <constraint firstItem="XhR-pg-4bC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R4m-ej-0vE"/>
+                            <constraint firstItem="XhR-pg-4bC" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="9vo-Z8-sp7"/>
+                            <constraint firstItem="XhR-pg-4bC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R4m-ej-0vE"/>
                             <constraint firstItem="XhR-pg-4bC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="da4-cf-LzM"/>
                             <constraint firstItem="XhR-pg-4bC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="diQ-gT-kJq"/>
                         </constraints>
