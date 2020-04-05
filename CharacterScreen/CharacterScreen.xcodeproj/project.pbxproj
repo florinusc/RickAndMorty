@@ -32,6 +32,20 @@
 			remoteGlobalIDString = 9F5C8D9C243A3B64003572A4;
 			remoteInfo = CharacterScreen;
 		};
+		9FC1052A243A400600677222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC10525243A400500677222 /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC1050B243A400500677222;
+			remoteInfo = Common;
+		};
+		9FC1052C243A400600677222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FC10525243A400500677222 /* Common.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FC10514243A400500677222;
+			remoteInfo = CommonTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +63,7 @@
 		9F5C8DBE243A3B65003572A4 /* CharacterScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharacterScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5C8DC2243A3B65003572A4 /* CharacterScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterScreenUITests.swift; sourceTree = "<group>"; };
 		9F5C8DC4243A3B65003572A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC10525243A400500677222 /* Common.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Common.xcodeproj; path = ../Common/Common.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,7 @@
 		9F5C8D94243A3B64003572A4 = {
 			isa = PBXGroup;
 			children = (
+				9FC10525243A400500677222 /* Common.xcodeproj */,
 				9F5C8D9F243A3B64003572A4 /* CharacterScreen */,
 				9F5C8DB6243A3B65003572A4 /* CharacterScreenTests */,
 				9F5C8DC1243A3B65003572A4 /* CharacterScreenUITests */,
@@ -99,13 +115,9 @@
 		9F5C8D9F243A3B64003572A4 /* CharacterScreen */ = {
 			isa = PBXGroup;
 			children = (
-				9F5C8DA0243A3B64003572A4 /* AppDelegate.swift */,
-				9F5C8DA2243A3B64003572A4 /* SceneDelegate.swift */,
-				9F5C8DA4243A3B64003572A4 /* ViewController.swift */,
-				9F5C8DA6243A3B64003572A4 /* Main.storyboard */,
+				9FC10500243A3FA100677222 /* Project Files */,
+				9F5C8DD0243A3C20003572A4 /* View */,
 				9F5C8DA9243A3B65003572A4 /* Assets.xcassets */,
-				9F5C8DAB243A3B65003572A4 /* LaunchScreen.storyboard */,
-				9F5C8DAE243A3B65003572A4 /* Info.plist */,
 			);
 			path = CharacterScreen;
 			sourceTree = "<group>";
@@ -126,6 +138,35 @@
 				9F5C8DC4243A3B65003572A4 /* Info.plist */,
 			);
 			path = CharacterScreenUITests;
+			sourceTree = "<group>";
+		};
+		9F5C8DD0243A3C20003572A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F5C8DA4243A3B64003572A4 /* ViewController.swift */,
+				9F5C8DA6243A3B64003572A4 /* Main.storyboard */,
+				9F5C8DAB243A3B65003572A4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FC10500243A3FA100677222 /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F5C8DA0243A3B64003572A4 /* AppDelegate.swift */,
+				9F5C8DA2243A3B64003572A4 /* SceneDelegate.swift */,
+				9F5C8DAE243A3B65003572A4 /* Info.plist */,
+			);
+			path = "Project Files";
+			sourceTree = "<group>";
+		};
+		9FC10526243A400500677222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FC1052B243A400600677222 /* Common.framework */,
+				9FC1052D243A400600677222 /* CommonTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +259,12 @@
 			mainGroup = 9F5C8D94243A3B64003572A4;
 			productRefGroup = 9F5C8D9E243A3B64003572A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9FC10526243A400500677222 /* Products */;
+					ProjectRef = 9FC10525243A400500677222 /* Common.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9F5C8D9C243A3B64003572A4 /* CharacterScreen */,
@@ -226,6 +273,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9FC1052B243A400600677222 /* Common.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Common.framework;
+			remoteRef = 9FC1052A243A400600677222 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9FC1052D243A400600677222 /* CommonTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonTests.xctest;
+			remoteRef = 9FC1052C243A400600677222 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9F5C8D9B243A3B64003572A4 /* Resources */ = {
@@ -436,7 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = CharacterScreen/Info.plist;
+				INFOPLIST_FILE = "CharacterScreen/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = CharacterScreen/Info.plist;
+				INFOPLIST_FILE = "CharacterScreen/Project Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
