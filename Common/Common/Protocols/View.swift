@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol View {
+public protocol View {
     associatedtype PresenterType: Presenter
     var presenter: PresenterType! { get set }
     static var storyboardName: String { get }
 }
 
 extension View where Self: UIViewController {
-    static func getInstance(presenter: PresenterType) -> Self {
+    public static func getInstance(presenter: PresenterType) -> Self {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         guard var viewController = storyboard.instantiateViewController(withIdentifier: String(describing: self)) as? Self else {
             fatalError("Could not instantiate view controller, make sure storyboard ID is set in interface builder")

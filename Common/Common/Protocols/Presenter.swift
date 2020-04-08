@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Presenter: class {
+public protocol Presenter: class {
     associatedtype RouterType: Router
     associatedtype InteractorType: Interactor
     associatedtype ViewType: View

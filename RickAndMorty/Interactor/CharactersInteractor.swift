@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Common
 
 protocol CharactersInteractorOutput: class {
     func charactersFetched(result: Result<[Character], Error>)

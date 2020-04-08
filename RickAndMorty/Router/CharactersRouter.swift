@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 class CharactersRouter: Router {
     
@@ -24,6 +25,10 @@ class CharactersRouter: Router {
         charactersPresenter.view = charactersViewController
         window.rootViewController = charactersViewController
         window.makeKeyAndVisible()
+    }
+    
+    func showCharacterScreen() {
+        
     }
     
 }

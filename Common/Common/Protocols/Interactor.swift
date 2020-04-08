@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  Interactor.swift
 //  RickAndMorty
 //
 //  Created by Florin Uscatu on 10/03/2020.
@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol Router {
-    func start()
-}
+public protocol Interactor {}

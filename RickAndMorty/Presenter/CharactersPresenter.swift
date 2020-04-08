@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Common
 
 class CharactersPresenter: Presenter {
    
@@ -22,6 +23,10 @@ class CharactersPresenter: Presenter {
     
     func viewDidLoad() {
         interactor.fetchCharacters()
+    }
+    
+    func showCharacterScreen(at index: Int) {
+        
     }
 }
 
