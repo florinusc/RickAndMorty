@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Common
 
-class ViewController: UIViewController {
-
+class CharacterViewController: UIViewController, View {
+    
+    var presenter: CharacterPresenter!
+    
+    static var storyboardName: String {
+        return "Main"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        presenter.viewDidLoad()
     }
-
-
 }
 
