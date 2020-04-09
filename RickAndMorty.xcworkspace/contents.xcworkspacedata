@@ -8,6 +8,6 @@
       location = "group:CharacterScreen/CharacterScreen.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:RickAndMorty.xcodeproj">
+      location = "container:/Users/florinuscatu/Documents/xcodeProjects/RickAndMorty/CharactersScreen.xcodeproj">
    </FileRef>
 </Workspace>
