@@ -2,12 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CharacterModule/CharacterModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CharactersModule/CharactersModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:RickAndMorty/RickAndMorty.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CharacterScreen/../Common/Common.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:CharacterScreen/CharacterScreen.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "container:/Users/florinuscatu/Documents/xcodeProjects/RickAndMorty/CharactersScreen.xcodeproj">
    </FileRef>
 </Workspace>

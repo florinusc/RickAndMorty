@@ -16,7 +16,7 @@ public protocol View {
 
 extension View where Self: UIViewController {
     public static func getInstance(presenter: PresenterType) -> Self {
-        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let storyboard = UIStoryboard(name: storyboardName, bundle: Bundle(for: Self.self))
         guard var viewController = storyboard.instantiateViewController(withIdentifier: String(describing: self)) as? Self else {
             fatalError("Could not instantiate view controller, make sure storyboard ID is set in interface builder")
         }

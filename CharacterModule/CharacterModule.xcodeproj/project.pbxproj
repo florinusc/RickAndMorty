@@ -7,210 +7,214 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F7F05F82445D0650029C050 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F42445D0650029C050 /* View.swift */; };
-		9F7F05F92445D0650029C050 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F52445D0650029C050 /* Presenter.swift */; };
-		9F7F05FA2445D0650029C050 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F62445D0650029C050 /* Router.swift */; };
-		9F7F05FB2445D0650029C050 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F72445D0650029C050 /* Interactor.swift */; };
-		9FC10515243A400500677222 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1050B243A400500677222 /* Common.framework */; };
-		9FC1051A243A400500677222 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC10519243A400500677222 /* CommonTests.swift */; };
-		9FC1051C243A400500677222 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC1050E243A400500677222 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FC105FC2440F04D00677222 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FB2440F04D00677222 /* CustomError.swift */; };
-		9FC106002440F06700677222 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FE2440F06700677222 /* SessionManager.swift */; };
-		9FC106012440F06700677222 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FF2440F06700677222 /* RequestType.swift */; };
+		9FC105CE243FEFC800677222 /* CharacterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC105C4243FEFC800677222 /* CharacterModule.framework */; };
+		9FC105D3243FEFC800677222 /* CharacterModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105D2243FEFC800677222 /* CharacterModuleTests.swift */; };
+		9FC105D5243FEFC800677222 /* CharacterModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC105C7243FEFC800677222 /* CharacterModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9FC10516243A400500677222 /* PBXContainerItemProxy */ = {
+		9FC105CF243FEFC800677222 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9FC10502243A400500677222 /* Project object */;
+			containerPortal = 9FC105BB243FEFC800677222 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FC1050A243A400500677222;
-			remoteInfo = Common;
+			remoteGlobalIDString = 9FC105C3243FEFC800677222;
+			remoteInfo = CharacterModule;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F7F05F42445D0650029C050 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = Common/Protocols/View.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F52445D0650029C050 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = Common/Protocols/Presenter.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F62445D0650029C050 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Common/Protocols/Router.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F72445D0650029C050 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = Common/Protocols/Interactor.swift; sourceTree = SOURCE_ROOT; };
-		9FC1050B243A400500677222 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC1050E243A400500677222 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		9FC1050F243A400500677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC10514243A400500677222 /* CommonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FC10519243A400500677222 /* CommonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTests.swift; sourceTree = "<group>"; };
-		9FC1051B243A400500677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC105FB2440F04D00677222 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
-		9FC105FE2440F06700677222 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		9FC105FF2440F06700677222 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		9FC105C4243FEFC800677222 /* CharacterModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CharacterModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC105C7243FEFC800677222 /* CharacterModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterModule.h; sourceTree = "<group>"; };
+		9FC105C8243FEFC800677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC105CD243FEFC800677222 /* CharacterModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharacterModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC105D2243FEFC800677222 /* CharacterModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModuleTests.swift; sourceTree = "<group>"; };
+		9FC105D4243FEFC800677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC105DE243FEFD300677222 /* CharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRouter.swift; sourceTree = "<group>"; };
+		9FC105E0243FEFD300677222 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
+		9FC105E2243FEFD300677222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FC105E3243FEFD300677222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FC105E4243FEFD300677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC105E6243FEFD300677222 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
+		9FC105E7243FEFD300677222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FC105E9243FEFD300677222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FC105EC243FEFD300677222 /* CharacterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInteractor.swift; sourceTree = "<group>"; };
+		9FC105EE243FEFD300677222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9FC10508243A400500677222 /* Frameworks */ = {
+		9FC105C1243FEFC800677222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC10511243A400500677222 /* Frameworks */ = {
+		9FC105CA243FEFC800677222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC10515243A400500677222 /* Common.framework in Frameworks */,
+				9FC105CE243FEFC800677222 /* CharacterModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9FC10501243A400500677222 = {
+		9FC105BA243FEFC800677222 = {
 			isa = PBXGroup;
 			children = (
-				9FC1050D243A400500677222 /* Common */,
-				9FC10518243A400500677222 /* CommonTests */,
-				9FC1050C243A400500677222 /* Products */,
+				9FC105C6243FEFC800677222 /* CharacterModule */,
+				9FC105D1243FEFC800677222 /* CharacterModuleTests */,
+				9FC105C5243FEFC800677222 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9FC1050C243A400500677222 /* Products */ = {
+		9FC105C5243FEFC800677222 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9FC1050B243A400500677222 /* Common.framework */,
-				9FC10514243A400500677222 /* CommonTests.xctest */,
+				9FC105C4243FEFC800677222 /* CharacterModule.framework */,
+				9FC105CD243FEFC800677222 /* CharacterModuleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9FC1050D243A400500677222 /* Common */ = {
+		9FC105C6243FEFC800677222 /* CharacterModule */ = {
 			isa = PBXGroup;
 			children = (
-				9FC105FD2440F06700677222 /* Network */,
-				9FC105FA2440F04D00677222 /* Helpers */,
-				9FC1052F243E6F0C00677222 /* Protocols */,
-				9FC1052E243A8B8600677222 /* Framework files */,
+				9FC105DF243FEFD300677222 /* Router */,
+				9FC105E1243FEFD300677222 /* Presenter */,
+				9FC105ED243FEFD300677222 /* Interactor */,
+				9FC105E5243FEFD300677222 /* Project Files */,
+				9FC105EB243FEFD300677222 /* View */,
+				9FC105EE243FEFD300677222 /* Assets.xcassets */,
+				9FC105C7243FEFC800677222 /* CharacterModule.h */,
+				9FC105C8243FEFC800677222 /* Info.plist */,
 			);
-			path = Common;
+			path = CharacterModule;
 			sourceTree = "<group>";
 		};
-		9FC10518243A400500677222 /* CommonTests */ = {
+		9FC105D1243FEFC800677222 /* CharacterModuleTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FC10519243A400500677222 /* CommonTests.swift */,
-				9FC1051B243A400500677222 /* Info.plist */,
+				9FC105D2243FEFC800677222 /* CharacterModuleTests.swift */,
+				9FC105D4243FEFC800677222 /* Info.plist */,
 			);
-			path = CommonTests;
+			path = CharacterModuleTests;
 			sourceTree = "<group>";
 		};
-		9FC1052E243A8B8600677222 /* Framework files */ = {
+		9FC105DF243FEFD300677222 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				9FC1050E243A400500677222 /* Common.h */,
-				9FC1050F243A400500677222 /* Info.plist */,
+				9FC105DE243FEFD300677222 /* CharacterRouter.swift */,
 			);
-			path = "Framework files";
+			path = Router;
 			sourceTree = "<group>";
 		};
-		9FC1052F243E6F0C00677222 /* Protocols */ = {
+		9FC105E1243FEFD300677222 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				9F7F05F72445D0650029C050 /* Interactor.swift */,
-				9F7F05F52445D0650029C050 /* Presenter.swift */,
-				9F7F05F62445D0650029C050 /* Router.swift */,
-				9F7F05F42445D0650029C050 /* View.swift */,
+				9FC105E0243FEFD300677222 /* CharacterPresenter.swift */,
 			);
-			name = Protocols;
-			path = ../../RickAndMorty/Protocols;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
-		9FC105FA2440F04D00677222 /* Helpers */ = {
+		9FC105E5243FEFD300677222 /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
-				9FC105FB2440F04D00677222 /* CustomError.swift */,
+				9FC105E2243FEFD300677222 /* AppDelegate.swift */,
+				9FC105E3243FEFD300677222 /* SceneDelegate.swift */,
+				9FC105E4243FEFD300677222 /* Info.plist */,
 			);
-			name = Helpers;
-			path = ../../CharactersModule/CharactersModule/Helpers;
+			path = "Project Files";
 			sourceTree = "<group>";
 		};
-		9FC105FD2440F06700677222 /* Network */ = {
+		9FC105EB243FEFD300677222 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9FC105FE2440F06700677222 /* SessionManager.swift */,
-				9FC105FF2440F06700677222 /* RequestType.swift */,
+				9FC105E6243FEFD300677222 /* CharacterViewController.swift */,
+				9FC105E8243FEFD300677222 /* Main.storyboard */,
+				9FC105EA243FEFD300677222 /* LaunchScreen.storyboard */,
 			);
-			name = Network;
-			path = ../../CharactersModule/CharactersModule/Network;
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FC105ED243FEFD300677222 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9FC105EC243FEFD300677222 /* CharacterInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9FC10506243A400500677222 /* Headers */ = {
+		9FC105BF243FEFC800677222 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC1051C243A400500677222 /* Common.h in Headers */,
+				9FC105D5243FEFC800677222 /* CharacterModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9FC1050A243A400500677222 /* Common */ = {
+		9FC105C3243FEFC800677222 /* CharacterModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC1051F243A400500677222 /* Build configuration list for PBXNativeTarget "Common" */;
+			buildConfigurationList = 9FC105D8243FEFC800677222 /* Build configuration list for PBXNativeTarget "CharacterModule" */;
 			buildPhases = (
-				9FC10506243A400500677222 /* Headers */,
-				9FC10507243A400500677222 /* Sources */,
-				9FC10508243A400500677222 /* Frameworks */,
-				9FC10509243A400500677222 /* Resources */,
+				9FC105BF243FEFC800677222 /* Headers */,
+				9FC105C0243FEFC800677222 /* Sources */,
+				9FC105C1243FEFC800677222 /* Frameworks */,
+				9FC105C2243FEFC800677222 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Common;
-			productName = Common;
-			productReference = 9FC1050B243A400500677222 /* Common.framework */;
+			name = CharacterModule;
+			productName = CharacterModule;
+			productReference = 9FC105C4243FEFC800677222 /* CharacterModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FC10513243A400500677222 /* CommonTests */ = {
+		9FC105CC243FEFC800677222 /* CharacterModuleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FC10522243A400500677222 /* Build configuration list for PBXNativeTarget "CommonTests" */;
+			buildConfigurationList = 9FC105DB243FEFC800677222 /* Build configuration list for PBXNativeTarget "CharacterModuleTests" */;
 			buildPhases = (
-				9FC10510243A400500677222 /* Sources */,
-				9FC10511243A400500677222 /* Frameworks */,
-				9FC10512243A400500677222 /* Resources */,
+				9FC105C9243FEFC800677222 /* Sources */,
+				9FC105CA243FEFC800677222 /* Frameworks */,
+				9FC105CB243FEFC800677222 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9FC10517243A400500677222 /* PBXTargetDependency */,
+				9FC105D0243FEFC800677222 /* PBXTargetDependency */,
 			);
-			name = CommonTests;
-			productName = CommonTests;
-			productReference = 9FC10514243A400500677222 /* CommonTests.xctest */;
+			name = CharacterModuleTests;
+			productName = CharacterModuleTests;
+			productReference = 9FC105CD243FEFC800677222 /* CharacterModuleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9FC10502243A400500677222 /* Project object */ = {
+		9FC105BB243FEFC800677222 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Florin Uscatu";
 				TargetAttributes = {
-					9FC1050A243A400500677222 = {
+					9FC105C3243FEFC800677222 = {
 						CreatedOnToolsVersion = 11.4;
 					};
-					9FC10513243A400500677222 = {
+					9FC105CC243FEFC800677222 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 9FC10505243A400500677222 /* Build configuration list for PBXProject "Common" */;
+			buildConfigurationList = 9FC105BE243FEFC800677222 /* Build configuration list for PBXProject "CharacterModule" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,26 +222,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 9FC10501243A400500677222;
-			productRefGroup = 9FC1050C243A400500677222 /* Products */;
+			mainGroup = 9FC105BA243FEFC800677222;
+			productRefGroup = 9FC105C5243FEFC800677222 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FC1050A243A400500677222 /* Common */,
-				9FC10513243A400500677222 /* CommonTests */,
+				9FC105C3243FEFC800677222 /* CharacterModule */,
+				9FC105CC243FEFC800677222 /* CharacterModuleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9FC10509243A400500677222 /* Resources */ = {
+		9FC105C2243FEFC800677222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC10512243A400500677222 /* Resources */ = {
+		9FC105CB243FEFC800677222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,40 +251,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9FC10507243A400500677222 /* Sources */ = {
+		9FC105C0243FEFC800677222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7F05F82445D0650029C050 /* View.swift in Sources */,
-				9FC105FC2440F04D00677222 /* CustomError.swift in Sources */,
-				9FC106012440F06700677222 /* RequestType.swift in Sources */,
-				9FC106002440F06700677222 /* SessionManager.swift in Sources */,
-				9F7F05FA2445D0650029C050 /* Router.swift in Sources */,
-				9F7F05FB2445D0650029C050 /* Interactor.swift in Sources */,
-				9F7F05F92445D0650029C050 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FC10510243A400500677222 /* Sources */ = {
+		9FC105C9243FEFC800677222 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC1051A243A400500677222 /* CommonTests.swift in Sources */,
+				9FC105D3243FEFC800677222 /* CharacterModuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9FC10517243A400500677222 /* PBXTargetDependency */ = {
+		9FC105D0243FEFC800677222 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FC1050A243A400500677222 /* Common */;
-			targetProxy = 9FC10516243A400500677222 /* PBXContainerItemProxy */;
+			target = 9FC105C3243FEFC800677222 /* CharacterModule */;
+			targetProxy = 9FC105CF243FEFC800677222 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		9FC105E8243FEFD300677222 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC105E7243FEFD300677222 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FC105EA243FEFD300677222 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FC105E9243FEFD300677222 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		9FC1051D243A400500677222 /* Debug */ = {
+		9FC105D6243FEFC800677222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		9FC1051E243A400500677222 /* Release */ = {
+		9FC105D7243FEFC800677222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -400,7 +416,7 @@
 			};
 			name = Release;
 		};
-		9FC10520243A400500677222 /* Debug */ = {
+		9FC105D9243FEFC800677222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -409,15 +425,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Common/Framework files/Info.plist";
+				INFOPLIST_FILE = CharacterModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = approcket.Common;
+				PRODUCT_BUNDLE_IDENTIFIER = approcket.CharacterModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -425,7 +440,7 @@
 			};
 			name = Debug;
 		};
-		9FC10521243A400500677222 /* Release */ = {
+		9FC105DA243FEFC800677222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -434,15 +449,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Common/Framework files/Info.plist";
+				INFOPLIST_FILE = CharacterModule/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = approcket.Common;
+				PRODUCT_BUNDLE_IDENTIFIER = approcket.CharacterModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -450,38 +464,36 @@
 			};
 			name = Release;
 		};
-		9FC10523243A400500677222 /* Debug */ = {
+		9FC105DC243FEFC800677222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = CommonTests/Info.plist;
+				INFOPLIST_FILE = CharacterModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = approcket.CommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = approcket.CharacterModuleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		9FC10524243A400500677222 /* Release */ = {
+		9FC105DD243FEFC800677222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
-				INFOPLIST_FILE = CommonTests/Info.plist;
+				INFOPLIST_FILE = CharacterModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = approcket.CommonTests;
+				PRODUCT_BUNDLE_IDENTIFIER = approcket.CharacterModuleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,34 +503,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9FC10505243A400500677222 /* Build configuration list for PBXProject "Common" */ = {
+		9FC105BE243FEFC800677222 /* Build configuration list for PBXProject "CharacterModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC1051D243A400500677222 /* Debug */,
-				9FC1051E243A400500677222 /* Release */,
+				9FC105D6243FEFC800677222 /* Debug */,
+				9FC105D7243FEFC800677222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC1051F243A400500677222 /* Build configuration list for PBXNativeTarget "Common" */ = {
+		9FC105D8243FEFC800677222 /* Build configuration list for PBXNativeTarget "CharacterModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC10520243A400500677222 /* Debug */,
-				9FC10521243A400500677222 /* Release */,
+				9FC105D9243FEFC800677222 /* Debug */,
+				9FC105DA243FEFC800677222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FC10522243A400500677222 /* Build configuration list for PBXNativeTarget "CommonTests" */ = {
+		9FC105DB243FEFC800677222 /* Build configuration list for PBXNativeTarget "CharacterModuleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FC10523243A400500677222 /* Debug */,
-				9FC10524243A400500677222 /* Release */,
+				9FC105DC243FEFC800677222 /* Debug */,
+				9FC105DD243FEFC800677222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9FC10502243A400500677222 /* Project object */;
+	rootObject = 9FC105BB243FEFC800677222 /* Project object */;
 }
