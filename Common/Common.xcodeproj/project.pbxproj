@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F7F05F82445D0650029C050 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F42445D0650029C050 /* View.swift */; };
-		9F7F05F92445D0650029C050 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F52445D0650029C050 /* Presenter.swift */; };
-		9F7F05FA2445D0650029C050 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F62445D0650029C050 /* Router.swift */; };
-		9F7F05FB2445D0650029C050 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F05F72445D0650029C050 /* Interactor.swift */; };
+		9F7F06052447A86C0029C050 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F06012447A86C0029C050 /* View.swift */; };
+		9F7F06062447A86C0029C050 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F06022447A86C0029C050 /* Interactor.swift */; };
+		9F7F06072447A86C0029C050 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F06032447A86C0029C050 /* Presenter.swift */; };
+		9F7F06082447A86C0029C050 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F06042447A86C0029C050 /* Router.swift */; };
 		9FC10515243A400500677222 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1050B243A400500677222 /* Common.framework */; };
 		9FC1051A243A400500677222 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC10519243A400500677222 /* CommonTests.swift */; };
 		9FC1051C243A400500677222 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC1050E243A400500677222 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,10 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F7F05F42445D0650029C050 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = Common/Protocols/View.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F52445D0650029C050 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presenter.swift; path = Common/Protocols/Presenter.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F62445D0650029C050 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Common/Protocols/Router.swift; sourceTree = SOURCE_ROOT; };
-		9F7F05F72445D0650029C050 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Interactor.swift; path = Common/Protocols/Interactor.swift; sourceTree = SOURCE_ROOT; };
+		9F7F06012447A86C0029C050 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		9F7F06022447A86C0029C050 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		9F7F06032447A86C0029C050 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		9F7F06042447A86C0029C050 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9FC1050B243A400500677222 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC1050E243A400500677222 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		9FC1050F243A400500677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7F06002447A86C0029C050 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9F7F06012447A86C0029C050 /* View.swift */,
+				9F7F06022447A86C0029C050 /* Interactor.swift */,
+				9F7F06032447A86C0029C050 /* Presenter.swift */,
+				9F7F06042447A86C0029C050 /* Router.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		9FC10501243A400500677222 = {
 			isa = PBXGroup;
 			children = (
@@ -85,9 +96,9 @@
 		9FC1050D243A400500677222 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9F7F06002447A86C0029C050 /* Protocols */,
 				9FC105FD2440F06700677222 /* Network */,
 				9FC105FA2440F04D00677222 /* Helpers */,
-				9FC1052F243E6F0C00677222 /* Protocols */,
 				9FC1052E243A8B8600677222 /* Framework files */,
 			);
 			path = Common;
@@ -109,18 +120,6 @@
 				9FC1050F243A400500677222 /* Info.plist */,
 			);
 			path = "Framework files";
-			sourceTree = "<group>";
-		};
-		9FC1052F243E6F0C00677222 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9F7F05F72445D0650029C050 /* Interactor.swift */,
-				9F7F05F52445D0650029C050 /* Presenter.swift */,
-				9F7F05F62445D0650029C050 /* Router.swift */,
-				9F7F05F42445D0650029C050 /* View.swift */,
-			);
-			name = Protocols;
-			path = ../../RickAndMorty/Protocols;
 			sourceTree = "<group>";
 		};
 		9FC105FA2440F04D00677222 /* Helpers */ = {
@@ -251,13 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F7F05F82445D0650029C050 /* View.swift in Sources */,
+				9F7F06072447A86C0029C050 /* Presenter.swift in Sources */,
+				9F7F06052447A86C0029C050 /* View.swift in Sources */,
 				9FC105FC2440F04D00677222 /* CustomError.swift in Sources */,
+				9F7F06082447A86C0029C050 /* Router.swift in Sources */,
+				9F7F06062447A86C0029C050 /* Interactor.swift in Sources */,
 				9FC106012440F06700677222 /* RequestType.swift in Sources */,
 				9FC106002440F06700677222 /* SessionManager.swift in Sources */,
-				9F7F05FA2445D0650029C050 /* Router.swift in Sources */,
-				9F7F05FB2445D0650029C050 /* Interactor.swift in Sources */,
-				9F7F05F92445D0650029C050 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
