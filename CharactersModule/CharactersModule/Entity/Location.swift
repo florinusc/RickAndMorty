@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Location: Decodable {
-    let name: String
-    let url: String
+public struct Location: Decodable {
+    public let name: String
+    public let url: String
 }
 
 extension Location: Hashable {}

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7F06092448692A0029C050 /* CharacterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105E0243FEFD300677222 /* CharacterPresenter.swift */; };
+		9F7F060A2448692D0029C050 /* CharacterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105EC243FEFD300677222 /* CharacterInteractor.swift */; };
+		9F7F060B244869300029C050 /* CharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105DE243FEFD300677222 /* CharacterRouter.swift */; };
+		9F7F060F2448693D0029C050 /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105E6243FEFD300677222 /* CharacterViewController.swift */; };
+		9F7F06102448693F0029C050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC105E8243FEFD300677222 /* Main.storyboard */; };
+		9F7F0611244869420029C050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC105EA243FEFD300677222 /* LaunchScreen.storyboard */; };
+		9F7F0612244869450029C050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC105EE243FEFD300677222 /* Assets.xcassets */; };
+		9F7F061624486A9D0029C050 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F061524486A9D0029C050 /* Common.framework */; };
+		9F7F061724486A9D0029C050 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F061524486A9D0029C050 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC105CE243FEFC800677222 /* CharacterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC105C4243FEFC800677222 /* CharacterModule.framework */; };
 		9FC105D3243FEFC800677222 /* CharacterModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105D2243FEFC800677222 /* CharacterModuleTests.swift */; };
 		9FC105D5243FEFC800677222 /* CharacterModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC105C7243FEFC800677222 /* CharacterModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,7 +31,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9F7F061824486A9D0029C050 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F7F061724486A9D0029C050 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9F7F061524486A9D0029C050 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC105C4243FEFC800677222 /* CharacterModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CharacterModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC105C7243FEFC800677222 /* CharacterModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharacterModule.h; sourceTree = "<group>"; };
 		9FC105C8243FEFC800677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,9 +55,6 @@
 		9FC105D4243FEFC800677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC105DE243FEFD300677222 /* CharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRouter.swift; sourceTree = "<group>"; };
 		9FC105E0243FEFD300677222 /* CharacterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPresenter.swift; sourceTree = "<group>"; };
-		9FC105E2243FEFD300677222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC105E3243FEFD300677222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FC105E4243FEFD300677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC105E6243FEFD300677222 /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		9FC105E7243FEFD300677222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FC105E9243FEFD300677222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7F061624486A9D0029C050 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7F061424486A9D0029C050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F7F061524486A9D0029C050 /* Common.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FC105BA243FEFC800677222 = {
 			isa = PBXGroup;
 			children = (
 				9FC105C6243FEFC800677222 /* CharacterModule */,
 				9FC105D1243FEFC800677222 /* CharacterModuleTests */,
 				9FC105C5243FEFC800677222 /* Products */,
+				9F7F061424486A9D0029C050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,8 +118,6 @@
 				9FC105E5243FEFD300677222 /* Project Files */,
 				9FC105EB243FEFD300677222 /* View */,
 				9FC105EE243FEFD300677222 /* Assets.xcassets */,
-				9FC105C7243FEFC800677222 /* CharacterModule.h */,
-				9FC105C8243FEFC800677222 /* Info.plist */,
 			);
 			path = CharacterModule;
 			sourceTree = "<group>";
@@ -121,9 +150,8 @@
 		9FC105E5243FEFD300677222 /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
-				9FC105E2243FEFD300677222 /* AppDelegate.swift */,
-				9FC105E3243FEFD300677222 /* SceneDelegate.swift */,
-				9FC105E4243FEFD300677222 /* Info.plist */,
+				9FC105C7243FEFC800677222 /* CharacterModule.h */,
+				9FC105C8243FEFC800677222 /* Info.plist */,
 			);
 			path = "Project Files";
 			sourceTree = "<group>";
@@ -168,6 +196,7 @@
 				9FC105C0243FEFC800677222 /* Sources */,
 				9FC105C1243FEFC800677222 /* Frameworks */,
 				9FC105C2243FEFC800677222 /* Resources */,
+				9F7F061824486A9D0029C050 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7F0611244869420029C050 /* LaunchScreen.storyboard in Resources */,
+				9F7F0612244869450029C050 /* Assets.xcassets in Resources */,
+				9F7F06102448693F0029C050 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7F060F2448693D0029C050 /* CharacterViewController.swift in Sources */,
+				9F7F060A2448692D0029C050 /* CharacterInteractor.swift in Sources */,
+				9F7F060B244869300029C050 /* CharacterRouter.swift in Sources */,
+				9F7F06092448692A0029C050 /* CharacterPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +461,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CharacterModule/Info.plist;
+				INFOPLIST_FILE = "CharacterModule/Project Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,7 +485,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CharacterModule/Info.plist;
+				INFOPLIST_FILE = "CharacterModule/Project Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +503,7 @@
 		9FC105DC243FEFC800677222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = CharacterModuleTests/Info.plist;
@@ -485,6 +522,7 @@
 		9FC105DD243FEFC800677222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8CEQW7LX82;
 				INFOPLIST_FILE = CharacterModuleTests/Info.plist;

@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Characters: Decodable {
-    let info: Info
-    let results: [Character]
+public struct Characters: Decodable {
+    public let info: Info
+    public let results: [Character]
 }
 
-struct Info: Decodable {
-    let count: Int
-    let pages: Int
-    let next: String
-    let prev: String
+public struct Info: Decodable {
+    public let count: Int
+    public let pages: Int
+    public let next: String
+    public let prev: String
 }

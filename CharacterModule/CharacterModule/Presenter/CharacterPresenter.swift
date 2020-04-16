@@ -14,6 +14,8 @@ class CharacterPresenter: Presenter {
     let router: CharacterRouter
     let interactor: CharacterInteractor
     
+    var article: Character!
+    
     weak var view: CharacterViewController?
     
     required init(router: CharacterRouter, interactor: CharacterInteractor) {

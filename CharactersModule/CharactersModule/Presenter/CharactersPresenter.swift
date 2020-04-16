@@ -16,6 +16,8 @@ class CharactersPresenter: Presenter {
     
     weak var view: CharactersViewController?
     
+    private var characters = [Character]()
+    
     required init(router: CharactersRouter, interactor: CharactersInteractor) {
         self.router = router
         self.interactor = interactor
@@ -26,13 +28,14 @@ class CharactersPresenter: Presenter {
     }
     
     func showCharacterScreen(at index: Int) {
-        
+        router.presentCharacterScreen(for: characters[index])
     }
 }
 
 extension CharactersPresenter: CharactersInteractorOutput {
     func charactersFetched(result: Result<[Character], Error>) {
         let newResult = result.map { (characters) -> [CharacterCellPresenter] in
+            self.characters = characters
             return characters.map { CharacterCellPresenter(character: $0) }
         }
         DispatchQueue.main.async {

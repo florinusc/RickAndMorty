@@ -9,15 +9,15 @@
 import Foundation
 
 public struct Character: Decodable {
-    let id: Int
-    let name: String
-    let species: String
-    let gender: String
-    let location: Location
-    let origin: Location
-    let image: String
-    let url: String
-    let episodes: [String]?
+    public let id: Int
+    public let name: String
+    public let species: String
+    public let gender: String
+    public let location: Location
+    public let origin: Location
+    public let image: String
+    public let url: String
+    public let episodes: [String]?
 }
 
 extension Character: Hashable {}

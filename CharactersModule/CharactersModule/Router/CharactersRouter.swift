@@ -8,10 +8,13 @@
 
 import UIKit
 import Common
+import CharacterModule
 
 public class CharactersRouter: Router {
     
     private let window: UIWindow
+    
+    private weak var charactersViewController: CharactersViewController?
     
     public init(window: UIWindow) {
         self.window = window
@@ -23,12 +26,15 @@ public class CharactersRouter: Router {
         charactersInteractor.output = charactersPresenter
         let charactersViewController = CharactersViewController.getInstance(presenter: charactersPresenter)
         charactersPresenter.view = charactersViewController
+        self.charactersViewController = charactersViewController
         window.rootViewController = charactersViewController
         window.makeKeyAndVisible()
     }
     
-    func showCharacterScreen() {
-        
+    func presentCharacterScreen(for character: Character) {
+        guard let charactersViewController = self.charactersViewController else { return }
+        let characterRouter = CharacterRouter()
+        characterRouter.presentCharacterScreen(from: charactersViewController)
     }
     
 }

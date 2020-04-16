@@ -6,11 +6,17 @@
 //  Copyright © 2020 Florin Uscatu. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Common
 
-class CharacterRouter: Router {
-    func start() {
-        
+public class CharacterRouter: Router {
+    
+    public init() {}
+    
+    public func presentCharacterScreen(from baseViewController: UIViewController) {
+        let characterInteractor = CharacterInteractor()
+        let characterPresenter = CharacterPresenter(router: self, interactor: characterInteractor)
+        let characterViewController = CharacterViewController.getInstance(presenter: characterPresenter)
+        baseViewController.present(characterViewController, animated: true, completion: nil)
     }
 }
