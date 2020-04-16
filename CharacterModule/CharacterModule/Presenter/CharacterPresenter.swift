@@ -11,16 +11,15 @@ import Common
 
 class CharacterPresenter: Presenter {
     
-    let router: CharacterRouter
-    let interactor: CharacterInteractor
+    let character: Character
     
-    var article: Character!
+    var router: CharacterRouter!
+    var interactor: CharacterInteractor!
     
     weak var view: CharacterViewController?
     
-    required init(router: CharacterRouter, interactor: CharacterInteractor) {
-        self.router = router
-        self.interactor = interactor
+    init(character: Character) {
+        self.character = character
     }
     
     func viewDidLoad() {}

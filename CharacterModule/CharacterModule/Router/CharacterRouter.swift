@@ -13,9 +13,11 @@ public class CharacterRouter: Router {
     
     public init() {}
     
-    public func presentCharacterScreen(from baseViewController: UIViewController) {
+    public func presentCharacterScreen(character: Character, from baseViewController: UIViewController) {
         let characterInteractor = CharacterInteractor()
-        let characterPresenter = CharacterPresenter(router: self, interactor: characterInteractor)
+        let characterPresenter = CharacterPresenter(character: character)
+        characterPresenter.router = self
+        characterPresenter.interactor = characterInteractor
         let characterViewController = CharacterViewController.getInstance(presenter: characterPresenter)
         baseViewController.present(characterViewController, animated: true, completion: nil)
     }

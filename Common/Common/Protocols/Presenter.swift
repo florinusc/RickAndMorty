@@ -12,10 +12,9 @@ public protocol Presenter: class {
     associatedtype RouterType: Router
     associatedtype InteractorType: Interactor
     associatedtype ViewType: View
-    var router: RouterType { get }
-    var interactor: InteractorType { get }
+    var router: RouterType! { get set }
+    var interactor: InteractorType! { get set }
     var view: ViewType? { get set }
-    init(router: RouterType, interactor: InteractorType)
     func viewDidLoad()
 }
 

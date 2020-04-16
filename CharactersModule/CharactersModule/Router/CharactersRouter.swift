@@ -22,7 +22,9 @@ public class CharactersRouter: Router {
     
     public func start() {
         let charactersInteractor = CharactersInteractor()
-        let charactersPresenter = CharactersPresenter(router: self, interactor: charactersInteractor)
+        let charactersPresenter = CharactersPresenter()
+        charactersPresenter.router = self
+        charactersPresenter.interactor = charactersInteractor
         charactersInteractor.output = charactersPresenter
         let charactersViewController = CharactersViewController.getInstance(presenter: charactersPresenter)
         charactersPresenter.view = charactersViewController
@@ -34,7 +36,7 @@ public class CharactersRouter: Router {
     func presentCharacterScreen(for character: Character) {
         guard let charactersViewController = self.charactersViewController else { return }
         let characterRouter = CharacterRouter()
-        characterRouter.presentCharacterScreen(from: charactersViewController)
+        characterRouter.presentCharacterScreen(character: character, from: charactersViewController)
     }
     
 }
