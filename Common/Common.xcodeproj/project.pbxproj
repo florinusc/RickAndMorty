@@ -20,6 +20,9 @@
 		9FC105FC2440F04D00677222 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FB2440F04D00677222 /* CustomError.swift */; };
 		9FC106002440F06700677222 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FE2440F06700677222 /* SessionManager.swift */; };
 		9FC106012440F06700677222 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105FF2440F06700677222 /* RequestType.swift */; };
+		9FFF11F32449E7240096F6A6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF11F02449E7230096F6A6 /* UIImageView+Extension.swift */; };
+		9FFF11F42449E7240096F6A6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF11F12449E7230096F6A6 /* UIViewController+Extension.swift */; };
+		9FFF11F52449E7240096F6A6 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF11F22449E7230096F6A6 /* UICollectionView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		9FC105FB2440F04D00677222 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		9FC105FE2440F06700677222 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		9FC105FF2440F06700677222 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		9FFF11F02449E7230096F6A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		9FFF11F12449E7230096F6A6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9FFF11F22449E7230096F6A6 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		9FC1050D243A400500677222 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9FFF11EF2449E7230096F6A6 /* Extensions */,
 				9F7F061924486D200029C050 /* Entity */,
 				9F7F06002447A86C0029C050 /* Protocols */,
 				9FC105FD2440F06700677222 /* Network */,
@@ -157,6 +164,17 @@
 			);
 			name = Network;
 			path = ../../CharactersModule/CharactersModule/Network;
+			sourceTree = "<group>";
+		};
+		9FFF11EF2449E7230096F6A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF11F02449E7230096F6A6 /* UIImageView+Extension.swift */,
+				9FFF11F12449E7230096F6A6 /* UIViewController+Extension.swift */,
+				9FFF11F22449E7230096F6A6 /* UICollectionView+Extension.swift */,
+			);
+			name = Extensions;
+			path = ../../CharactersModule/CharactersModule/Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,13 +286,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFF11F42449E7240096F6A6 /* UIViewController+Extension.swift in Sources */,
 				9F7F061E24486D200029C050 /* Character.swift in Sources */,
 				9F7F06072447A86C0029C050 /* Presenter.swift in Sources */,
 				9F7F06052447A86C0029C050 /* View.swift in Sources */,
 				9F7F061D24486D200029C050 /* Location.swift in Sources */,
 				9FC105FC2440F04D00677222 /* CustomError.swift in Sources */,
+				9FFF11F52449E7240096F6A6 /* UICollectionView+Extension.swift in Sources */,
 				9F7F06082447A86C0029C050 /* Router.swift in Sources */,
 				9F7F06062447A86C0029C050 /* Interactor.swift in Sources */,
+				9FFF11F32449E7240096F6A6 /* UIImageView+Extension.swift in Sources */,
 				9FC106012440F06700677222 /* RequestType.swift in Sources */,
 				9FC106002440F06700677222 /* SessionManager.swift in Sources */,
 				9F7F061F24486D200029C050 /* Characters.swift in Sources */,

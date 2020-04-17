@@ -11,6 +11,9 @@ import Common
 
 class CharacterViewController: UIViewController, View {
     
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    
     var presenter: CharacterPresenter!
     
     static var storyboardName: String {
@@ -20,6 +23,14 @@ class CharacterViewController: UIViewController, View {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
+        setup()
+    }
+    
+    private func setup() {
+        nameLabel.text = presenter.name
+        if let url = URL(string: presenter.imageUrl) {
+            imageView.load(url: url)
+        }
     }
 }
 

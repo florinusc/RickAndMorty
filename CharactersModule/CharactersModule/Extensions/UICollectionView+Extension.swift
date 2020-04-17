@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     func register<T: UICollectionViewCell>(_: T.Type) {
         let bundle = Bundle(for: T.self)
         let nib = UINib(nibName: String(describing: T.self), bundle: bundle)

@@ -18,6 +18,14 @@ class CharacterPresenter: Presenter {
     
     weak var view: CharacterViewController?
     
+    var imageUrl: String {
+        return character.image
+    }
+    
+    var name: String {
+        return character.name
+    }
+    
     init(character: Character) {
         self.character = character
     }

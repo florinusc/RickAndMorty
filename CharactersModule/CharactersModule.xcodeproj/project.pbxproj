@@ -14,9 +14,6 @@
 		9F7F05EA244376E10029C050 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC105B3243FEF9900677222 /* CharacterCell.swift */; };
 		9F7F05EB244376E50029C050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC105B1243FEF9900677222 /* Main.storyboard */; };
 		9F7F05EC244376E80029C050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC105AF243FEF9900677222 /* LaunchScreen.storyboard */; };
-		9F7F05ED244376EB0029C050 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1059A243FEF9800677222 /* UICollectionView+Extension.swift */; };
-		9F7F05EE244376EF0029C050 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1059B243FEF9800677222 /* UIViewController+Extension.swift */; };
-		9F7F05EF244376F10029C050 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC1059C243FEF9800677222 /* UIImageView+Extension.swift */; };
 		9F7F062124486EA80029C050 /* CharacterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F062024486EA80029C050 /* CharacterModule.framework */; };
 		9F7F062224486EA80029C050 /* CharacterModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7F062024486EA80029C050 /* CharacterModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC10589243FEF6D00677222 /* CharactersModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC1057F243FEF6D00677222 /* CharactersModule.framework */; };
@@ -60,9 +57,6 @@
 		9FC10588243FEF6D00677222 /* CharactersModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharactersModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC1058F243FEF6D00677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC10599243FEF9800677222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9FC1059A243FEF9800677222 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		9FC1059B243FEF9800677222 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		9FC1059C243FEF9800677222 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		9FC1059E243FEF9800677222 /* CharactersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersPresenter.swift; sourceTree = "<group>"; };
 		9FC1059F243FEF9800677222 /* CharacterCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCellPresenter.swift; sourceTree = "<group>"; };
 		9FC105A4243FEF9900677222 /* CharactersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersInteractor.swift; sourceTree = "<group>"; };
@@ -72,9 +66,6 @@
 		9FC105B2243FEF9900677222 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		9FC105B3243FEF9900677222 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		9FC105B4243FEF9900677222 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
-		9FC105B6243FEF9900677222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC105B7243FEF9900677222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FC105B8243FEF9900677222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC105F5243FF08600677222 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,7 +112,6 @@
 		9FC10581243FEF6D00677222 /* CharactersModule */ = {
 			isa = PBXGroup;
 			children = (
-				9FC1059D243FEF9800677222 /* Extensions */,
 				9FC105B5243FEF9900677222 /* View */,
 				9FC105A5243FEF9900677222 /* Interactor */,
 				9FC105A0243FEF9800677222 /* Presenter */,
@@ -129,7 +119,6 @@
 				9FC105B9243FEF9900677222 /* Project Files */,
 				9FC10599243FEF9800677222 /* Assets.xcassets */,
 				9FC10582243FEF6D00677222 /* CharactersModule.h */,
-				9FC10583243FEF6D00677222 /* Info.plist */,
 			);
 			path = CharactersModule;
 			sourceTree = "<group>";
@@ -140,16 +129,6 @@
 				9FC1058F243FEF6D00677222 /* Info.plist */,
 			);
 			path = CharactersModuleTests;
-			sourceTree = "<group>";
-		};
-		9FC1059D243FEF9800677222 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				9FC1059A243FEF9800677222 /* UICollectionView+Extension.swift */,
-				9FC1059B243FEF9800677222 /* UIViewController+Extension.swift */,
-				9FC1059C243FEF9800677222 /* UIImageView+Extension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9FC105A0243FEF9800677222 /* Presenter */ = {
@@ -192,9 +171,7 @@
 		9FC105B9243FEF9900677222 /* Project Files */ = {
 			isa = PBXGroup;
 			children = (
-				9FC105B6243FEF9900677222 /* AppDelegate.swift */,
-				9FC105B7243FEF9900677222 /* SceneDelegate.swift */,
-				9FC105B8243FEF9900677222 /* Info.plist */,
+				9FC10583243FEF6D00677222 /* Info.plist */,
 			);
 			path = "Project Files";
 			sourceTree = "<group>";
@@ -322,12 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7F05E5244376CB0029C050 /* CharacterCellPresenter.swift in Sources */,
-				9F7F05EE244376EF0029C050 /* UIViewController+Extension.swift in Sources */,
 				9F7F05E4244376C40029C050 /* CharactersViewController.swift in Sources */,
 				9FC105F9243FF0B100677222 /* CharactersInteractor.swift in Sources */,
 				9F7F05EA244376E10029C050 /* CharacterCell.swift in Sources */,
-				9F7F05EF244376F10029C050 /* UIImageView+Extension.swift in Sources */,
-				9F7F05ED244376EB0029C050 /* UICollectionView+Extension.swift in Sources */,
 				9FC105F3243FF06600677222 /* CharactersRouter.swift in Sources */,
 				9F7F05E3244376C10029C050 /* CharactersPresenter.swift in Sources */,
 			);
@@ -499,7 +473,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CharactersModule/Info.plist;
+				INFOPLIST_FILE = "CharactersModule/Project Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,7 +497,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CharactersModule/Info.plist;
+				INFOPLIST_FILE = "CharactersModule/Project Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
