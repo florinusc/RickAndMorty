@@ -26,6 +26,22 @@ class CharacterPresenter: Presenter {
         return character.name
     }
     
+    var location: String {
+        return "Current location: \(character.location.name)"
+    }
+    
+    var gender: String {
+        return "Gender: \(character.gender)"
+    }
+    
+    var species: String {
+        return "Species: \(character.species)"
+    }
+    
+    var episodes: String {
+        return "\(character.episode?.count ?? 0) episodes"
+    }
+    
     init(character: Character) {
         self.character = character
     }

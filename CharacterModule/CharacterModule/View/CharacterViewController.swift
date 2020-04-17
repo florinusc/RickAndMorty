@@ -13,6 +13,10 @@ class CharacterViewController: UIViewController, View {
     
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var locationLabel: UILabel!
+    @IBOutlet private weak var genderLabel: UILabel!
+    @IBOutlet private weak var speciesLabel: UILabel!
+    @IBOutlet private weak var episodesLabel: UILabel!
     
     var presenter: CharacterPresenter!
     
@@ -31,6 +35,10 @@ class CharacterViewController: UIViewController, View {
         if let url = URL(string: presenter.imageUrl) {
             imageView.load(url: url)
         }
+        genderLabel.text = presenter.gender
+        locationLabel.text = presenter.location
+        speciesLabel.text = presenter.species
+        episodesLabel.text = presenter.episodes
     }
 }
 

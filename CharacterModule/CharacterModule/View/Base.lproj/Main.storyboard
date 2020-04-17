@@ -21,27 +21,61 @@
                                     <constraint firstAttribute="width" secondItem="id7-2H-v9q" secondAttribute="height" multiplier="1:1" id="yYZ-vU-BHt"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-Yv-dHa">
-                                <rect key="frame" x="10" y="438" width="394" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="27v-9d-ZAN">
+                                <rect key="frame" x="10" y="438" width="394" height="414"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-Yv-dHa">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="79"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hx-aF-sBT">
+                                        <rect key="frame" x="0.0" y="84" width="394" height="78.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZw-ep-szq">
+                                        <rect key="frame" x="0.0" y="167.5" width="394" height="79"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W21-U0-dZB">
+                                        <rect key="frame" x="0.0" y="251.5" width="394" height="78.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIx-OW-Fna">
+                                        <rect key="frame" x="0.0" y="335" width="394" height="79"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="id7-2H-v9q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7XA-bu-4v3"/>
-                            <constraint firstItem="ZaM-Yv-dHa" firstAttribute="top" secondItem="id7-2H-v9q" secondAttribute="bottom" constant="24" id="CY3-58-Zab"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZaM-Yv-dHa" secondAttribute="trailing" constant="10" id="Dwx-Fx-w0O"/>
+                            <constraint firstItem="27v-9d-ZAN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8fU-Y2-sAL"/>
                             <constraint firstItem="id7-2H-v9q" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Vv9-fS-EzY"/>
-                            <constraint firstItem="ZaM-Yv-dHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="XmH-N9-8Cg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="27v-9d-ZAN" secondAttribute="trailing" constant="10" id="WVz-TM-Aye"/>
                             <constraint firstItem="id7-2H-v9q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dmS-9i-xww"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27v-9d-ZAN" secondAttribute="bottom" constant="10" id="ehM-55-3PC"/>
+                            <constraint firstItem="27v-9d-ZAN" firstAttribute="top" secondItem="id7-2H-v9q" secondAttribute="bottom" constant="24" id="xSN-EO-6R1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="episodesLabel" destination="nIx-OW-Fna" id="6Ov-Xu-We5"/>
+                        <outlet property="genderLabel" destination="7Hx-aF-sBT" id="ON6-C4-KN7"/>
                         <outlet property="imageView" destination="id7-2H-v9q" id="QU5-me-lBh"/>
+                        <outlet property="locationLabel" destination="W21-U0-dZB" id="OD9-54-Jy3"/>
                         <outlet property="nameLabel" destination="ZaM-Yv-dHa" id="jtC-7d-5L4"/>
+                        <outlet property="speciesLabel" destination="mZw-ep-szq" id="xrE-Qg-rUm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
